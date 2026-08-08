@@ -24,6 +24,9 @@ pip install -r requirements.txt
 Per CLI-Argument:
 python preisverfolger.py https://books.toscrape.com
 Oder interaktiv ohne Argument (fragt dann nach der URL):
+python preisverfolger.py
+Optional lässt sich der Name der Ausgabedatei anpassen (Standard: #preise.csv):
+python preisverfolger.py https://books.toscrape.com --output eigenerdateiname.csv
 
 ## Technologien
 
