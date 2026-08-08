@@ -9,8 +9,8 @@ Teil des Portfolios: [monkmonk1988.github.io](https://monkmonk1988.github.io)
 ## Was das Tool macht
 
 - Fragt den Nutzer nach einer URL
-- Ladt die Seite und parst den HTML-Inhalt
-- Extrahiert alle Titel und Preise
+- Lädt die Seite und parst den HTML-Inhalt
+- Extrahiert alle Buchtitel und Preise (aktuell speziell für die Struktur von books.toscrape.com ausgelegt)
 - Speichert die Ergebnisse in `preise.csv`
 - Gibt die Ergebnisse gleichzeitig in der Konsole aus
 
