@@ -13,6 +13,8 @@ Teil des Portfolios: [monkmonk1988.github.io](https://monkmonk1988.github.io)
 - Extrahiert alle Buchtitel und Preise (aktuell speziell für die Struktur von books.toscrape.com ausgelegt)
 - Speichert die Ergebnisse in `preise.csv`
 - Gibt die Ergebnisse gleichzeitig in der Konsole aus
+- Fängt Netzwerkfehler und ungültige URLs ab, statt abzustürzen
+- Meldet klar, wenn eine Seite keine passenden Titel/Preise enthält, statt eine leere CSV zu erzeugen
 
 ## Voraussetzungen
 
