@@ -8,8 +8,7 @@ Teil des Portfolios: [monkmonk1988.github.io](https://monkmonk1988.github.io)
 
 ## Was das Tool macht
 
-- Fragt den Nutzer nach einer URL
-- Lädt die Seite und parst den HTML-Inhalt
+- Lädt eine Website und parst den HTML-Inhalt
 - Extrahiert alle Buchtitel und Preise (aktuell speziell für die Struktur von books.toscrape.com ausgelegt)
 - Speichert die Ergebnisse in `preise.csv`
 - Gibt die Ergebnisse gleichzeitig in der Konsole aus
@@ -18,17 +17,13 @@ Teil des Portfolios: [monkmonk1988.github.io](https://monkmonk1988.github.io)
 
 ## Voraussetzungen
 
-```
 pip install requests beautifulsoup4
-```
 
 ## Nutzung
 
-```
-python preisverfolger.py
-```
-
-Dann URL eingeben, z.B.: `https://books.toscrape.com`
+Per CLI-Argument:
+python preisverfolger.py https://books.toscrape.com
+Oder interaktiv ohne Argument (fragt dann nach der URL):
 
 ## Technologien
 
@@ -36,3 +31,4 @@ Dann URL eingeben, z.B.: `https://books.toscrape.com`
 - requests
 - BeautifulSoup4
 - csv (Standardbibliothek)
+- argparse (Standardbibliothek)
