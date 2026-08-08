@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 liste = []
 parser = argparse.ArgumentParser(description="Scraped Buchtitel und Preise von einer Webseite")
 parser.add_argument("url", nargs='?', help="Die zu durchsuchende URL")
+parser.add_argument("--output", default="preise.csv", help="Name der Ausgabedatei (Standard: preise.csv)")
 args = parser.parse_args()
 eingabe = args.url if args.url else input("Bitte geben Sie die zu durchsuchende URL ein: ")
 
@@ -23,9 +24,7 @@ if not all_soups or not prices:
     print("Keine Titel oder Preise gefunden. Diese Seite wird aktuell nicht unterstützt.")
     exit()
 
-
-
-with open("preise.csv", "w",newline="", encoding="utf-8") as datei:
+with open(args.output, "w", newline="", encoding="utf-8") as datei:
     writer = csv.writer(datei)
     writer.writerow(["Titel", "Preis"])
 

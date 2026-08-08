@@ -17,7 +17,7 @@ Teil des Portfolios: [monkmonk1988.github.io](https://monkmonk1988.github.io)
 
 ## Voraussetzungen
 
-pip install requests beautifulsoup4
+pip install -r requirements.txt
 
 ## Nutzung
 
