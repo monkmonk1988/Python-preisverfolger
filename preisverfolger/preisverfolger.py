@@ -1,9 +1,13 @@
 import requests
 import csv
+import argparse
 from bs4 import BeautifulSoup
 
 liste = []
-eingabe = input("Bitte die zu durchsuchende URL Angeben: ")
+parser = argparse.ArgumentParser(description="Scraped Buchtitel und Preise von einer Webseite")
+parser.add_argument("url", nargs='?', help="Die zu durchsuchende URL")
+args = parser.parse_args()
+eingabe = args.url if args.url else input("Bitte geben Sie die zu durchsuchende URL ein: ")
 
 try:
     url = requests.get(eingabe)
